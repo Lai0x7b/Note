@@ -55,14 +55,24 @@ git commit -m "test"
 git push origin main 
 ```
 
-## 5. 如何建立 Branch 
+## 5. Branch(分支)操作
 
 ```bash
 #建立一個名為patch/1.1.1的branch 
 git branch patch/1.1.1 
+#切換branch 
+git checkout patch/1.1.1 
+#建立並切換branch 
+git checkout -b patch/1.1.1 
+#刪除Local Repository中的branch，需先切換到另一個branch 
+git checkout main 
+git branch -d patch/1.1.1 
+#刪除Remote Repository中的branch 
+git push origin --delete patch/1.1.1 
+#合併branch 
+
 #查看所有branch 
 git branch -a 
-
 ```
 
 ## Git 查看命令
@@ -72,4 +82,6 @@ git branch -a
 git status 
 #查看Repository名稱
 git remote -v 
+#查看所有branch
+git branch -a 
 ```
