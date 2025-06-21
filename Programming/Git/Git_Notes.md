@@ -35,12 +35,16 @@ git config --list
 ```bash
 #Clone Remote Repository  
 git clone https://github.com/example/example.git
-#建立索引
+#建立索引，可使用.代表當前目錄下所有更改過的文件
 git add . 
+#或者單獨指定檔案或目錄
+git add test.txt
 #commit 至 Local Repository，雙引號中可填寫提交訊息
 git commit -m "test"  
 #推送至指定 branch 
 git push origin main 
+#當從別台裝置修改後，回到原本的裝置可以使用pull拉取最新的內容
+git pull 
 ```
 
 ### 4.2 從現有的目錄中進行版控
@@ -54,6 +58,8 @@ git add .
 git commit -m "test"  
 #推送至指定 branch 
 git push origin main 
+#當從別台裝置修改後，回到原本的裝置可以使用pull拉取最新的內容
+git pull 
 ```
 
 ## 5. Branch(分支)操作
@@ -76,7 +82,7 @@ git push origin --delete patch/1.1.1
 git branch -a 
 ```
 
-## 6. 如何復原 
+## 6. 復原 
 
 ```bash
 
@@ -91,7 +97,10 @@ git status
 git remote -v 
 #查看所有branch
 git branch -a 
+#查看git log
+git log 
 ```
 
 ## Reference ##
 
+[Git命令大全](https://gist.github.com/guweigang/9848271)
