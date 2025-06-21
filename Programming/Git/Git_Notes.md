@@ -1,4 +1,4 @@
-# Git
+# Git Notes
 
 以下說明如何在 WSL2 環境下操作 Git。
 
@@ -14,6 +14,7 @@ Git 是一個分散式版本控制系統，用來追蹤檔案的變更歷史，�
 
 - **Branch (分支)**  是 Git 中用來隔離開發工作的機制，可以理解成一個獨立的開發線，讓每個人或每個功能都能在自己的分支上進行修改，互不影響主分支 (如 main)，等到開發完成並測試無誤後再合併 (merge) 回主分支，這樣可以協助多人協作並有效避免代碼衝突。
 - **Origin**  Git 預設的遠端儲存庫名稱，當執行 clone 時，系統會自動將 Github Repository 命名成 Origin ，可以使用 git remote -v 查看
+- **.gitignore** 
 
 ## 3. 初始化
 
@@ -73,6 +74,12 @@ git push origin --delete patch/1.1.1
 
 #查看所有branch 
 git branch -a 
+```
+
+## 6. 如何復原 
+
+```bash
+
 ```
 
 ## Git 查看命令
