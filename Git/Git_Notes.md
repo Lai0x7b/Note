@@ -58,12 +58,18 @@ git push origin main
 ## 5. 如何建立 Branch 
 
 ```bash
-git branch patch/1.1.1
+#建立一個名為patch/1.1.1的branch 
+git branch patch/1.1.1 
+#查看所有branch 
+git branch -a 
+
 ```
 
 ## Git 查看命令
 
 ```bash
-git status #查看目錄的狀態
-git remote -v #查看Repository名稱
+#查看目錄的狀態
+git status 
+#查看Repository名稱
+git remote -v 
 ```
